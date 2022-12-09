@@ -255,14 +255,14 @@ footer{
        
     }
 
-    .imgPort img{
-        width: 70vw;
-        height: 60vh;
+    .imgPort img{   
+        width: 500px;
+        height: 500px;
     }
     
     footer{
-        justify-content: center;
         background-color: #7fdbd4;
+        justify-content: center;
         height: 10vh;
     }
     
@@ -272,17 +272,15 @@ footer{
 
     .netsAcess div {
         justify-content: space-evenly;
-        width: 100%
+        width: 100%;    
     }
 
     .netsAcess div img{
-        height: 80px;
         width: 35px;
     }
 
     .netsAcess .face{
-      height: 80px;
-      width: 15px;
+        width: 15px;
     }
 
     .layoutExclaimer{
