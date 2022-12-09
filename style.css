@@ -90,20 +90,16 @@ header nav ul li:hover{
 }
 
 .banner h1{
-    text-indent: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: solid red;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-transform: capitalize;
-
 }
 
 .talkWithUs{
-    text-indent: 30px;
-    border: solid blue;
+    text-indent: 50px;
     display: flex;
     align-items: flex-end;
     height: 100px;
@@ -114,14 +110,16 @@ header nav ul li:hover{
 .talkWithUs:hover{
     text-decoration: underline;
     font-size: 40px;    
-
 }
 
+.indentP{
+    text-indent: 50px;
+}
 
 /*Portfolio Images*/
 
 .imgPort{
-    margin-top: 5vh;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -143,7 +141,6 @@ header nav ul li:hover{
 
 footer{
     height: 7vw;
-    margin-top: 50px;
     display: flex;
     align-items: center;
     background-color: #F6F6F6;
@@ -151,26 +148,25 @@ footer{
 
 /*Social Medias Icons*/
 
-.netsAcess nav{
+.netsAcess{
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;  
+    width: 35%;
+}
+.netsAcess div{
     display: flex;
     justify-content: space-around;
-    width: 60%;
-}
-
-.netsAcess{ 
-    display: flex;
-    width: 35%;
-    align-items: center;    
-    justify-content: space-evenly; 
+    width: 70%;
 }
 
 .netsAcess a img{
-    height: 50px;
-    width: 25px;
+    height: 55px;
+    width: 30px;
 }
 
 .netsAcess .face{
-    width: 11.5px;
+    width: 13px;
 }
 
 /*Footer Information*/
@@ -197,6 +193,10 @@ footer{
 
 /* @media (phone) */
 @media (max-width: 593px) {
+    
+    main{
+        pointer-events: none;
+    }
     .menuBox{
         display: flex;
         align-items: center;
@@ -204,7 +204,10 @@ footer{
         background-color: black;
         height: 100%;
         width: 25%;
+        height: 100%;
+        width: 25%;
     }
+
     .menuImg{
         display:inline-block;
         height: 2vw;
@@ -214,9 +217,8 @@ footer{
     header{
         align-items: none;
         justify-content: start;
-        height: 7vw;
+        height: 10vw;
     }
-
     header h2{
         text-align: center;
         width: 50%;
@@ -225,11 +227,13 @@ footer{
     header nav{
         display:none;
     }
+
+    /*Banner*/
     
     .banner{
         justify-content: end;
-        height: 90vh;
-        
+        height: 90vh;        
+        text-indent: 50px;
         background-repeat: no-repeat;
         background-image:url(imagens/CropBanner.png);
     }
@@ -240,16 +244,53 @@ footer{
         height: 250px;
         
     }
-
+    
     .talkWithUs{
         align-items: center;
     }
 
-    .imgPort img{
-        width: 40vw;
-        height: 40vh;
+    .imgPort{
+        flex-direction: column;
+        align-items: center;
+       
     }
 
- 
+    .imgPort img{
+        width: 70vw;
+        height: 60vh;
+    }
+    
+    footer{
+        justify-content: center;
+        background-color: #7fdbd4;
+        height: 10vh;
+    }
+    
+    .netsAcess{ 
+        width: 100%;
+    }
 
+    .netsAcess div {
+        justify-content: space-evenly;
+        width: 100%
+    }
+
+    .netsAcess div img{
+        height: 80px;
+        width: 35px;
+    }
+
+    .netsAcess .face{
+      height: 80px;
+      width: 15px;
+    }
+
+    .layoutExclaimer{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+    
 }
