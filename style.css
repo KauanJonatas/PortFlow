@@ -146,7 +146,6 @@ footer{
 .footerDiv{
     display: flex;
     justify-content: space-between;
-    border: solid;
     width: 30%;
 }
 /*Social Medias Icons*/
@@ -177,14 +176,11 @@ footer{
 .layoutExclaimer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 10px;
+    width: 400px;
 }
-
 .copyright{
     display: flex;
     align-items: center;
@@ -194,12 +190,14 @@ footer{
 }
 
 
+
 /* @media (phone) */
 @media (max-width: 593px) {
     
     main{
         pointer-events: none;
     }
+
     .menuBox{
         display: flex;
         align-items: center;
@@ -219,7 +217,7 @@ footer{
         align-items: none;
         justify-content: start;
         height: 10vw;
-        width: 100vw;
+        width: 100%;
     }
     header h2{
         text-align: center;
@@ -263,11 +261,8 @@ footer{
     }
     
     footer{ 
-        border: solid red;
-        justify-content: start;
         flex-direction: column;
-        height: 20vh;
-        width: 100%;
+        height: 25vh;
         background-color: white;
     }
     
@@ -277,42 +272,28 @@ footer{
     
     .netsAcess div {
         background-color: #7fdbd4;
-        border: solid brown;
         justify-content: space-evenly;
-        width: 100%;    
+        width: 78.5%;    
     }
 
     .netsAcess div img{
         width: 35px;
     }
-
+    
     .netsAcess .face{
         width: 15px;
     }
-
+    
     .footerDiv{
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        border: solid blue;
-        width: 100%;
+        width: 78%;
         height: 100%;
     }
     
-    .copyright{
-        align-items: flex-end;
-        height: 40%;
-        border: solid pink;
-    }
-    
     .layoutExclaimer{
+        width: 60%;
         font-size: 14px;
-        width: 70%;
-        border: solid yellow;
-        height: 70%;
-    }
-
-    .layoutExclaimer p{
-        border: solid;
-    }
-    
+    } 
 }
