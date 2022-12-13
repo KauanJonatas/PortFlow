@@ -247,6 +247,10 @@ footer {
         background-image: url(imagens/CropBanner.png);
     }
 
+    .indentP{
+        text-indent: 50px;
+    }
+
     .space{
         text-indent: 50px;
     }
@@ -259,6 +263,8 @@ footer {
     }
 
     .talkWithUs {
+        height: 20vh;
+        text-indent: 55px;
         align-items: center;
     }
 
