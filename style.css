@@ -88,7 +88,7 @@ header li:hover {
     text-indent: 20px;
 }
 
-.banner h1 {
+.bannerH1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -100,6 +100,7 @@ header li:hover {
 .indentP {
     text-indent: 100px;
 }
+
 .talkWithUs {
     text-indent: 100px;
     display: flex;
@@ -139,18 +140,6 @@ header li:hover {
 }
 
 
-footer {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    background-color: #F6F6F6;
-}
-
-.footerDiv {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-}
 
 /*Social Medias Icons*/
 
@@ -158,16 +147,18 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 35%;
+    width: 50%;
+
 }
 
 .netsAcess div {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
+
 }
 
-.netsAcess a img {
+.netsAcess img {
     height: 55px;
     width: 30px;
 }
@@ -178,12 +169,29 @@ footer {
 
 /*Footer Information*/
 
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.footerMSG {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+
+.divButtonMsg{
+    width: 100vw;
+}
+
 .layoutExclaimer {
     display: flex;
     flex-direction: column;
     font-weight: normal;
     font-size: 11px;
-    width: 400px;
+    width: fit-content;
 }
 
 .copyright {
@@ -198,15 +206,14 @@ footer {
 }
 
 
-
 /* @media (phone) */
 @media (max-width: 593px) {
-
-
+    
+    
     main {
         pointer-events: none;
     }
-
+    
     .menuBox {
         display: flex;
         align-items: center;
@@ -297,7 +304,7 @@ footer {
         width: 78.5%;
     }
 
-    .netsAcess div img {
+    .netsAcess img {
         width: 35px;
     }
 
@@ -305,12 +312,18 @@ footer {
         width: 15px;
     }
 
-    .footerDiv {
+    .footerMSG {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 78%;
         height: 100%;
+    }
+
+    .divButtonMsg{
+        width: 78%;
+        height: 200px;
+        display: flex;
+        align-items: center;
     }
 
     .layoutExclaimer {
@@ -321,9 +334,6 @@ footer {
     .buttonTop {
         font-weight: normal;
         display: flex;
-        position: relative;
-        bottom: 60px;
-        left: 59.5vw;
         justify-content: center;
         align-items: center;
         background-color: #333333;
